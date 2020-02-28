@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_margin="20dp"
+    tools:context=".View.AddNote">
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/top_bar"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:weightSum="9"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/title_input"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:hint="title"
+            android:gravity="center"
+            android:background="#F7F1EF"/>
+        <EditText
+            android:id="@+id/priority_input"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:hint="priority"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="#F7F1EF"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
